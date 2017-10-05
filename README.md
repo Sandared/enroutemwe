@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+# Jekyll Project Documentation Template v1.0
 
-You can use the [editor on GitHub](https://github.com/Sandared/enroutemwe/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+A Project Documentation Template.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The theme is an adopted version of [Materialize Starter Template](https://github.com/macrod68/jekyll-materialize-starter-template), which is based on 
+[Materialize][http://materializecss.com/] a  modern responsive front-end framework based on Material Design.
+Copyright © 2017 Marco Damiani. Powered by <a href="http://jekyllrb.com">Jekyll</a>
 
-### Markdown
+# License
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Sandared/enroutemwe/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+This theme is available as open source under the terms of the [MIT License][https://opensource.org/licenses/MIT].
