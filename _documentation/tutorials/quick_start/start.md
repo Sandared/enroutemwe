@@ -5,7 +5,7 @@ description: In this quick start we develop a little project that, creates a sin
 ---
 # Overview
 
-![Thumbnail for Quickstart Tutorial]({{site.baseurl}}/documentation/tutorials/quick_start/img/app-0.png)
+![Thumbnail for Quickstart Tutorial](img/app-0.png)
 {: .thumb200-l }
 
 In this quick start we develop a little project that, creates a single page web-application.
@@ -20,10 +20,10 @@ If you have any questions about this quick-start, please discuss them in the [fo
 
 ## Sections
 
-1. [Prerequisites]({{site.baseurl}}/documentation/tutorials/quick_start/prerequisites.html) – The prerequisites for the use of OSGi enRoute (Important!)
-1. [The Workspace]({{site.baseurl}}/documentation/tutorials/quick_start/workspace.html) – Setup a bnd workspace
-1. [Creating an Application]({{site.baseurl}}/documentation/tutorials/quick_start/create_an_application.html) – Creating a sample enRoute Application
-1. [Exercise Services]({{site.baseurl}}/documentation/tutorials/quick_start/exercise_service.html) – Using services in the Demo Application
+1. [Prerequisites](prerequisites.html) – The prerequisites for the use of OSGi enRoute (Important!)
+1. [The Workspace](workspace.html) – Setup a bnd workspace
+1. [Creating an Application](create_an_application.html) – Creating a sample enRoute Application
+1. [Exercise Services](exercise_service.html) – Using services in the Demo Application
 
 
 ## End
