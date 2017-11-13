@@ -1,6 +1,6 @@
 ---
 title: Base Tutorial
-description: In this tutorial we develop a little project that creates a simple server application that interacts with an OSGi console shell.
+description: The Base Tutorial is a very extensive tutorial that takes you to all the principles. It starts from scratch and it brings you all the way to a release cycle with continuous integration.
 layout: nested
 files:
   - 'section1'

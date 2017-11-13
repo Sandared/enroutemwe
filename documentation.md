@@ -3,6 +3,8 @@ layout: nested
 title: Documentation
 navbaritem: true
 subfolders:
-  - 'appnotes'
   - 'tutorials'
+  - 'appnotes'
+files:
+  - 'preface'
 ---

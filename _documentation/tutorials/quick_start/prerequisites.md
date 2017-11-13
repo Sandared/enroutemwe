@@ -1,7 +1,7 @@
 ---
 title: Prerequisites
-description: Before you start any of the tutorials you must prepare your environment so that the right tools are installed.
 layout: nested
+description: Before you start the tutorial you must prepare your environment so that the right tools are installed.
 ---
 
 # Prerequisites
@@ -26,8 +26,8 @@ If we update bndtools with a stable release then we will place it here:
 
 You can find the details how to install bndtools on the [bndtools website](http://bndtools.org/installation.html#update-site)
 
-Do not install the development version since it is currently incompatible with the tutorials.
-{: .note }
+> Do not install the development version since it is currently incompatible with the tutorials.
+
 
 ## Conventions
 
@@ -65,3 +65,5 @@ There is also multi-workspace launcher plugin from Torkild U. Resheim that incor
 [mars]: https://www.eclipse.org/downloads/
 [git]: http://git-scm.com/book/en/Getting-Started-Installing-Git
 [gitforwindows]: http://msysgit.github.io
+
+
