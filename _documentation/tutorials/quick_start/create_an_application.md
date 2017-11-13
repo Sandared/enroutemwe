@@ -15,19 +15,19 @@ Over time the menu system can have small changes. Variations seen are `Bnd OSGi 
 {: .warning }
 
 
-![Create Application Project](/documentation/tutorials/quick_start/img/app-create-0.png)
+![Create Application Project]({{site.url}}/documentation/tutorials/quick_start/img/app-create-0.png)
 
 This will open a wizard where we select the _template_. For this tutorial, it is mandatory to use the OSGi enRoute template since our workspace is not setup for the other templates. The OSGi enRoute templates create specific project types based on the suffix of the project name. In this case we create an application project.
 
-![Create Application Project](/documentation/tutorials/quick_start/img/app-create-1.png)
+![Create Application Project]({{site.url}}/documentation/tutorials/quick_start/img/app-create-1.png)
 
 Now naming is important and we've found that using Java package like names that use the workspace name as a prefix works best for projects. So we pick `com.acme.prime.upper.application`. For OSGi enRoute, this `.application` suffix is *crucial* since it defines the template we will use. So in the first page we enter this name.
 
-![Select the OSGi enRoute template](/documentation/tutorials/quick_start/img/app-create-2.png)
+![Select the OSGi enRoute template]({{site.url}}/documentation/tutorials/quick_start/img/app-create-2.png)
 
 Select `Next` to go to the Java settings page, which should not change since OSGi enRoute has already set this up.
 
-![Select the OSGi enRoute template](/documentation/tutorials/quick_start/img/app-create-3.png)
+![Select the OSGi enRoute template]({{site.url}}/documentation/tutorials/quick_start/img/app-create-3.png)
 
 So we can just click `Finish` and get it over with.
 
@@ -35,7 +35,7 @@ So we can just click `Finish` and get it over with.
 
 The OSGi enRoute template has already created some source code for us. This source code is making a single page web-application. So double click on the `UpperApplication.java` source file to open the Java editor to see what kind of code we need.
 
-![The UpperApplication source code](/documentation/tutorials/quick_start/img/upper-0.png)
+![The UpperApplication source code]({{site.url}}/documentation/tutorials/quick_start/img/upper-0.png)
 
 So what's in there? The first thing you will see is a number of annotations. They ensure that we include the proper web resources for our application like Angular, Bootstrap, and the web extender that serves our static pages. Then we have the component annotation that makes this object a Declarative Services _service component_. A service component is automatically  registered as a service when it implements an interface and it can depend on other services.
 
@@ -87,21 +87,21 @@ We won't go into more detail now because we just want to see it run! Understandi
 
 Double click on the `com.acme.prime.upper.bndrun` file and select the `Run` tab. In this tab we can express the requirements we have on the runtime. Since we specified our requirements via the annotations, we're good to go as long as our application is listed in the initial requirements. This is the case by default. You could add any of the other bundles listed on the left side as a requirement but lets assume we're good for now.
 
-![Runtime Requirements](/documentation/tutorials/quick_start/img/resolve-initial-0.png)
+![Runtime Requirements]({{site.url}}/documentation/tutorials/quick_start/img/resolve-initial-0.png)
 
 So hit the `Resolve` button. This will open a dialog that shows you what bundles are required in runtime.
 
-![Resolved set](/documentation/tutorials/quick_start/img/resolve-initial-1.png)
+![Resolved set]({{site.url}}/documentation/tutorials/quick_start/img/resolve-initial-1.png)
 
 Clicking `Finish` will set the `Run Bundles` list. This list is normally not visible. Open it if you'd like to see the resulting bundles.
 
-![Resolved set](/documentation/tutorials/quick_start/img/resolve-initial-2.png)
+![Resolved set]({{site.url}}/documentation/tutorials/quick_start/img/resolve-initial-2.png)
 
 Note that every time you resolve, the `-runbundles` are overwritten with the new resolution. So **never** add bundles directly to the `-runbundles` if you use the resolver!
 
 Save the `com.acme.prime.upper.bndrun` file and then click on the `Debug OSGi` button at the right top of the window.
 
-![Resolved set](/documentation/tutorials/quick_start/img/run-buttons-0.png)
+![Resolved set]({{site.url}}/documentation/tutorials/quick_start/img/run-buttons-0.png)
 
 You are app is running and waiting for customers to enjoy the terrific upper casing:
 
@@ -109,7 +109,7 @@ You are app is running and waiting for customers to enjoy the terrific upper cas
 
 Just click on the 'To Upper!' button. This will ask you for a word and then prints the result in the alert bar.
 
-![The Application](/documentation/tutorials/quick_start/img/app-0.png)
+![The Application]({{site.url}}/documentation/tutorials/quick_start/img/app-0.png)
 
 ## Debugging
 
@@ -117,7 +117,7 @@ Of course you will never need to debug OSGi enRoute projects since they are by d
 
 You can debug this project as you can any other project in Java. You can set breakpoints and single step. There is one difference with more traditional Java. In our case, we generate a bundle that gets deployed on every change we make. If you change some code and save it, a new bundle will get deployed. If you get more requirements in the `bndrun` file, those new bundles will be deployed or no longer necessary bundles get removed. This works so well that the dialog box that Eclipse sometimes pops up to tell you it could not patch the class files can be ignored because bnd does not rely on this patching.
 
-![Resolved set](/documentation/tutorials/quick_start/img/debug-patch-0.png)
+![Resolved set]({{site.url}}/documentation/tutorials/quick_start/img/debug-patch-0.png)
 
 So just click the check-box and dismiss this dialog. That out of the way, let's change our code from making this upper case code to return lower case code. (Don't kill the running framework.)
 ```java
@@ -138,7 +138,7 @@ Then double click the `debug.bndrun` file and select the `Run` tab, then click o
 This window looks similar to the following picture. Note that there are no listed requirements because they are inherited from the `com.acme.prime.upper.bndrun` file.
 
 
-![Resolved set](/documentation/tutorials/quick_start/img/debug-details-0.png)
+![Resolved set]({{site.url}}/documentation/tutorials/quick_start/img/debug-details-0.png)
 
 So save the `debug.bndrun` file and click `Debug OSGi`. First, this `bndrun` file will run in trace mode. (You can control this through the `-runtrace` property that you can see when you double click the `debug.bndrun` file and select the `Source` tab.) In trace mode, the launcher provides detailed information about the launch process as well the ongoing update process when there are changed in bndtools.
 
@@ -149,7 +149,7 @@ If you're asked for your credentials, the Apache Felix boys have given you an un
 User id: 	admin
 Password:	admin
 ```
-![Resolved set](/documentation/tutorials/quick_start/img/debug-xray-0.png)
+![Resolved set]({{site.url}}/documentation/tutorials/quick_start/img/debug-xray-0.png)
 
 In the full tutorial the possibilities of XRay are further explained.
 
@@ -161,15 +161,15 @@ Double click on the `com.acme.prime.upper.bndrun` file and select the `Run` tab.
 
 At the top of this window you see the following buttons:
 
-![Run buttons](/documentation/tutorials/quick_start/img/run-buttons-0.png)
+![Run buttons]({{site.url}}/documentation/tutorials/quick_start/img/run-buttons-0.png)
 
 The `Export` button creates an executable JAR out of the specification of its corresponding `bndrun` file. The execution will be identical to when you run your code inside eclipse. So click on the `Export` button:
 
-![Resolved set](/documentation/tutorials/quick_start/img/export-0.png)
+![Resolved set]({{site.url}}/documentation/tutorials/quick_start/img/export-0.png)
 
 Click on `Next` to go to the wizard page that requests for the path to save the executable JAR at. Suggest you save it on the desktop under the name `com.acme.prime.upper.jar`:
 
-![Resolved set](/documentation/tutorials/quick_start/img/export-1.png)
+![Resolved set]({{site.url}}/documentation/tutorials/quick_start/img/export-1.png)
 
 Then we click `Finish`.
 
