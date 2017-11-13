@@ -3,6 +3,8 @@ author: OSGi Alliance
 email: 
 description: The Easy Way Towards Modularity
 
+baseurl: enroutemwe
+
 # language to use in html tag, can be overriden by page.lang
 # lang: en 
 
