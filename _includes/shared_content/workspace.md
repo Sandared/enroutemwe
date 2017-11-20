@@ -33,39 +33,39 @@ First get some confusing stuff out of the way. We will have two (2) workspaces:
 
 The structure is depicted in the following illustration:
 
-![Eclipse & bnd workspace](/documentation/tutorials/shared_assets/workspace/workspaces-layout.png)
+![Eclipse & bnd workspace](../shared_assets/workspace/workspaces-layout.png)
 
 ## Opening Eclipse (Or Switching Workspace)
 
 If you start Eclipse you will have to open the Eclipse workspace, see the previous issues. At the start of Eclipse (or when you do `File/Switch Workspace`) you will see the following dialog:
 
-![Switch Workspace](/documentation/tutorials/shared_assets/workspace/qs-switch-0.png)
+![Switch Workspace](../shared_assets/workspace/qs-switch-0.png)
 
 After filling in the proper path and then closing the dialog by clicking `OK`, we get an Eclipse restart. After Eclipse is done, we should finally get:
 
-![Start Screen](/documentation/tutorials/shared_assets/workspace/qs-switch-1.png)
+![Start Screen](../shared_assets/workspace/qs-switch-1.png)
 
 ## Creating the bnd Workspace
 
 To create a new bnd Workspace we use the `New/Other/Bndtools/Bnd OSGi Workspace` menu:
 
-![Select New Workspace Wizard](/documentation/tutorials/shared_assets/workspace/workspace-select.png)
+![Select New Workspace Wizard](../shared_assets/workspace/workspace-select.png)
 
 Select `Bnd OSGi Workspace` and click `Next`. This will bring you to a dialog that allows you to specify the location of the bnd workspace. Here we must select the `Create in` radio button because it is bad practice to use the same directory for the bnd workspace as the Eclipse workspace as explained before.
 
-![bnd workspace location](/documentation/tutorials/shared_assets/workspace/location.png)
+![bnd workspace location](../shared_assets/workspace/location.png)
 
 Clicking on `Next` will bring us to the window that selects the template that we will use. In this case we will obviously choose the OSGi enRoute template.
 
-![Select OSGi enRoute Template](/documentation/tutorials/shared_assets/workspace/select-enroute.png)
+![Select OSGi enRoute Template](../shared_assets/workspace/select-enroute.png)
 
 After you selected the template and clicked `Next` then Bndtools will show you proposed new content of the workspace in a list. If you would update an existing workspace you could control any conflicts.
 
-![Content list](/documentation/tutorials/shared_assets/workspace/empty-bnd-workspace.png)
+![Content list](../shared_assets/workspace/empty-bnd-workspace.png)
 
 In our case we just click `Finish` and we're done! Our Eclipse should look like:
 
-![Empty IDE with just cnf](/documentation/tutorials/shared_assets/workspace/bnd-empty-workspace.png)
+![Empty IDE with just cnf](../shared_assets/workspace/bnd-empty-workspace.png)
 
 
 ## How Does it Work?
