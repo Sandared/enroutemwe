@@ -8,5 +8,6 @@ files:
   - 'workspace'
   - 'create_an_application'
   - 'exercise_service'
+image: img/app-0.png
 ---
 
