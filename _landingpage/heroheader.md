@@ -2,7 +2,7 @@
 layout: heroheader
 button:
   text: Get Started!
-  url: https://sandared.github.io/enroutemwe/documentation.html
+  url: tutorials.html
 title: OSGi enRoute
 subtitle: The Easy Way Towards Real Modularity
 version: 2.0.0
