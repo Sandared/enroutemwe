@@ -51,11 +51,16 @@ blockquote{border-left:3px solid {{accentColor}};font-style:italic;font-weight:3
 table.striped>tbody>tr:nth-child(odd){background-color:{{secondaryBackgroundColor}};}
 
 /* Cards */
-.card-title{color: {{primaryTextColor}};}
+.card .card-image .card-title{color: {{primaryTextColor}}; font-weight: 600; padding-bottom: 0px; padding-left:12px; padding-right: 12px;}
 .card-content{color: {{secondaryTextColor}};}
+.card .card-content{padding-top: 5px;}
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){color: {{primaryColor}};}
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover{color: {{accentColor}};}
 .card.small{height: 225px;}
+.card-placeholder-image{color:{{dividerColor}};}
+.card-image img{opacity: 0.3;}
+.card-image h2{opacity: 0.3;}
+.card .card-image{min-height:60%;}
 
 /* Breadcrumbs */
 nav{background-color: {{inverseTextColor}};}

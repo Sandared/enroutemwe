@@ -49,5 +49,7 @@ twitter_button:
 collections:
   landingpage:
     output: true
-  documentation:
+  tutorials:
+    output: true
+  services:
     output: true

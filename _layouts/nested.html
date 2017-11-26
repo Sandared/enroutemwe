@@ -26,11 +26,10 @@
 	{% include templates/header.html %}
 	
 	{% assign rootPath = page.url | remove: ".html" | append: "/" %}
+	{% assign relativeRootPath = rootPath | replace_first: "/", "" %}
   <main>	
   <div class="container">
-		<div class="row">			
-		
-		
+		<div class="row">	
 		{% if isNested %}
 			<div class="section col s12">
 				{% include templates/breadcrumbs.html %}				
@@ -40,48 +39,32 @@
 			<!-- create path to the file --> 
 				{% assign fileHTMLPath = rootPath | append: file | append: ".html" %}
 				<!--find the file-->
-				{% for collection in site.collections %}				
+				{% for collection in site.collections %}
 					{% assign htmlFile = collection.docs | where_exp:"item", "item.url == fileHTMLPath" | first  %}
 					{% if htmlFile %}
 						{% break %}
 					{% endif %}
-				{% endfor %}
+				{% endfor %}				
 				
-				{% assign image = htmlFile.image %}
-				
-				{% if image %}
-					<!--create a card with image for each-->
-					<div class="col s12 m8 push-m2 l6 xl4">
-						<div class="card horizontal small hoverable">
-							<div class="card-image">
-								<img src="{{ "" | relative_url | prepend: site.url | append: fileHTMLPath | remove: ".html" | append: "/" | append: image}}">
-							</div>
-							<div class="card-stacked">
-								<div class="card-content">
-									<span class="card-title">{{ htmlFile.title }}</span>
-								</div>
-								<div class="card-action">
-									<a class="card-action-link" href="{{"" | relative_url | prepend: site.url | append: fileHTMLPath}}">Go to {{htmlFile.title | downcase}}</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-				{% else %}
-					<!--create a card for each-->
-					<div class="col s12 m8 push-m2 l6 xl4">
+				<!--create a card with image for each-->
+				<div class="col s12 m8 push-m2 l6 xl4">
+					<a class="card-action-link" href="{{"" | relative_url | prepend: site.url | append: fileHTMLPath}}">
 						<div class="card small hoverable">
+							<div class="card-image">
+							{% assign image = htmlFile.image %}
+							{% if image %}
+								<img src="{{ relative_url | append: relativeRootPath | append: image}}">
+							{% else %}
+								<h2 class="center card-placeholder-image"><i class="large material-icons">view_headline</i></h2>
+							{% endif %}
+								<span class="card-title">{{ htmlFile.title | truncate: 21}}</span>
+							</div>
 							<div class="card-content">
-							  <span class="card-title">{{ htmlFile.title }}</span>
-							  <p>{{ htmlFile.description }}</p>
+								<p>{{htmlFile.description | truncatewords: 17}}</p>
 							</div>
-							<div class="card-action">
-							  <a class="card-action-link" href="{{"" | relative_url | prepend: site.url | append: fileHTMLPath}}">Go to {{htmlFile.title | downcase}}</a>
-							</div>
-						</div>
-					</div>
-				{% endif %}
-				
+						</div>							
+					</a>
+				</div>				
 				
 			{% endfor %}
 			<!-- add all subfolders-->
@@ -94,41 +77,29 @@
 					{% if subfolderInfo %}
 						{% break %}
 					{% endif %}
-				{% endfor %}
+				{% endfor %}			
 				
-				{% assign image = subfolderInfo.image %}
-				
-				{% if image %}
-					<!--create a card with image for each-->
-					<div class="col s12 m8 push-m2 l6 xl4">
-						<div class="card horizontal small hoverable">
+				<!--create a card with image for each-->
+				<div class="col s12 m8 push-m2 l6 xl4">
+					<a class="card-action-link" href="{{"" | relative_url | prepend: site.url | append: subfolderInfoHTMLPath}}">
+						<div class="card small hoverable">
 							<div class="card-image">
-								<img src="{{ "" | relative_url | prepend: site.url | append: subfolderInfoHTMLPath | remove: ".html" | append: "/" | append: image}}">
+							{% assign image = subfolderInfo.image %}	
+							{% if image %}
+								<img src="{{ relative_url | append: relativeRootPath | append: subfolder | append: "/" | append: image}}">
+							{% else %}
+								<h2 class="center card-placeholder-image"><i class="large material-icons">folder</i></h2>
+							{% endif %}
+								<span class="card-title">{{ subfolderInfo.title | truncate: 21}}</span>
 							</div>
 							<div class="card-stacked">
 								<div class="card-content">
-									<span class="card-title">{{ subfolderInfo.title }}</span>									
-								</div>
-								<div class="card-action">
-									<a class="card-action-link" href="{{"" | relative_url | prepend: site.url | append: subfolderInfoHTMLPath}}">Go to {{subfolderInfo.title | downcase}}</a>
-								</div>
+									<p>{{ subfolderInfo.description | truncatewords: 17 }}</p>									
+								</div>								
 							</div>
 						</div>
-					</div>
-				{% else %}
-					<!--create a card for each-->
-					<div class="col s12 m8 push-m2 l6 xl4">
-						<div class="card small hoverable">
-							<div class="card-content">
-							  <span class="card-title">{{ subfolderInfo.title }}</span>
-							  <p>{{ subfolderInfo.description}}</p>
-							</div>
-							<div class="card-action">
-							  <a class="card-action-link" href="{{"" | relative_url | prepend: site.url | append: subfolderInfoHTMLPath}}">Go to {{subfolderInfo.title | downcase}}</a>
-							</div>
-						</div>
-					</div>
-				{% endif %}
+					</a>
+				</div>			
 				
 			{% endfor %}
 			<div id="text-content" class="section col s12 l10">			
@@ -153,6 +124,15 @@
 				  </ul>
 				</div>
 			</div>
+			{% assign toPush = true %}
+			{% if page.lprev %}
+				{% assign toPush = false %}
+				<div class="col s6 left-align hide-on-large-only show-on-med-and-down"><a href="{{ page.lprev | append: ".html"}}"><i class="large material-icons">keyboard_arrow_left</i></a></div>
+			{% endif %}
+			{% if page.lnext %}
+				<div class="col s6 {% if toPush %} push-s6 {% endif %} right-align hide-on-large-only show-on-med-and-down"><a href="{{ page.lnext | append: ".html"}}"><i class="large material-icons">keyboard_arrow_right</i></a></div>
+			{% endif %}
+			
 			{% if page.lprev %}
 				<div class="prev-nav hide-on-med-and-down"><a href="{{ page.lprev | append: ".html"}}"><i class="small material-icons">keyboard_arrow_left</i></a></div>
 			{% endif %}
