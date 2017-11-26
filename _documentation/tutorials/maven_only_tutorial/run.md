@@ -2,6 +2,8 @@
 title: OSGi Runtime
 layout: nested
 description: In this section we start by defining a runtime environment
+lprev: provider-junit
+lnext: command
 ---
 
 # OSGi Runtime

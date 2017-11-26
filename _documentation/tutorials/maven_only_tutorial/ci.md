@@ -2,6 +2,8 @@
 title: Continuous Integration
 layout: nested
 description: In this section we will use Github and Travis to setup a continuous integration system.
+lprev: modules
+lnext: eclipse
 ---
 # Continuous Integration
 

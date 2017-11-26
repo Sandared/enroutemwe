@@ -2,6 +2,8 @@
 title: Deploying an Application
 layout: nested
 description: Creating a sample application and deploying it.
+lprev: testing
+lnext: ci
 ---
 # Deploying an Application
 

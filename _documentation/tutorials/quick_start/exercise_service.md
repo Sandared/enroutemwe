@@ -2,6 +2,8 @@
 title: Exercise Services
 layout: nested
 description: Using services in the Demo Application
+lprev: create_an_application
+lnext: start
 ---
 
 # Exercise Services

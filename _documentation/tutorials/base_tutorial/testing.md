@@ -2,6 +2,8 @@
 title: Testing in OSGi
 layout: nested
 description: In this section we define OSGi based testing in an actual framework
+lprev: dependencies
+lnext: deploy
 ---
 # Testing in OSGi
 

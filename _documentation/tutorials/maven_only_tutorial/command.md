@@ -2,6 +2,8 @@
 title: Command Project
 layout: nested
 description: Create a shell command that exercises the evaluation parser
+lprev: run
+lnext: dependencies
 ---
 # Command Project
 

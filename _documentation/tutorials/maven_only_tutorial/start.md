@@ -2,7 +2,10 @@
 title: Overview
 layout: nested
 description: This tutorial shows you how to build an OSGi enRoute executable JAR using Maven and vi only
+lnext: parent
 ---
+
+# Overview
 
 ![Maven Eval Tutorial](img/tutorial_eval.png)
 {: .thumb200-l }

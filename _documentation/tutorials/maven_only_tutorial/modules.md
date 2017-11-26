@@ -2,6 +2,8 @@
 title: Modules
 layout: nested
 description: In this section we will make our parent pom also a module pom
+lprev: testing
+lnext: ci
 ---
 # Modules
 

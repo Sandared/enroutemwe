@@ -2,6 +2,8 @@
 title: Debugging
 layout: nested
 description: In this section we take a deeper look how we can debug a running framework
+lprev: run
+lnext: dependencies
 ---
 # Debugging
 

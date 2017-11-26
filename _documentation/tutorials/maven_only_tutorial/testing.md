@@ -2,6 +2,8 @@
 title: Integration Testing
 layout: nested
 description: In this section we will create an OSGi integration test
+lprev: web
+lnext: modules
 ---
 # Integration Testing
 

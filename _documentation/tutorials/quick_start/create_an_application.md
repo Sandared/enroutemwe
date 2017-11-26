@@ -2,6 +2,8 @@
 title: Creating an Application
 layout: nested
 description: Creating a sample enRoute Application
+lprev: workspace
+lnext: exercise_service
 ---
 # Creating an Application
 

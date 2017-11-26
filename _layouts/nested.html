@@ -153,9 +153,16 @@
 				  </ul>
 				</div>
 			</div>
+			{% if page.lprev %}
+				<div class="prev-nav hide-on-med-and-down"><a href="{{ page.lprev | append: ".html"}}"><i class="small material-icons">keyboard_arrow_left</i></a></div>
+			{% endif %}
+			{% if page.lnext %}
+				<div class="next-nav hide-on-med-and-down"><a href="{{ page.lnext | append: ".html"}}"><i class="small material-icons">keyboard_arrow_right</i></a></div>
+			{% endif %}
 		{% endif %}
-		
+			
     </div> 
+	
   </div>
   </main>
 	{% include templates/footer.html %}      

@@ -2,6 +2,7 @@
 title: Overview
 layout: nested
 description: In this tutorial we develop a little project that creates a simple server application that interacts with an OSGi console shell
+lnext: prerequisites
 ---
 
 # Overview 

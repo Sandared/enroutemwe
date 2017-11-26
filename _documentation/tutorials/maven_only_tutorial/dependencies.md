@@ -2,6 +2,8 @@
 title: Dependencies
 layout: nested
 description: In this section we will replace the rather simplistic parser with an external dependency from Maven Central
+lprev: command
+lnext: web
 ---
 # Dependencies
 

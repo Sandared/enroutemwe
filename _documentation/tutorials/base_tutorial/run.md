@@ -2,6 +2,8 @@
 title: Running Your Code
 layout: nested
 description: In this section we will take the project we created in the previous section and make it run inside an actual framework
+lprev: junit
+lnext: debug
 ---
 # Running your Code
 

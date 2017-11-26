@@ -2,6 +2,8 @@
 title: Parent Pom
 layout: nested
 description: Create a Maven parent pom project
+lprev: start
+lnext: api
 ---
 
 # Parent Pom

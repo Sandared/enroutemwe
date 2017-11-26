@@ -2,6 +2,8 @@
 title: Provider Project
 layout: nested
 description: In this section we create another project that provides an implementation for our Eval API, a so called provider
+lprev: api
+lnext: junit
 ---
 # Provider Project
 

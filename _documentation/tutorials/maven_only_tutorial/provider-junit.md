@@ -2,6 +2,8 @@
 title: Testing our Provider
 layout: nested
 description: In this section we will create a whitebox JUnit test for our simple.provider implementation
+lprev: provider
+lnext: run
 ---
 
 # Testing our Provider

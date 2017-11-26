@@ -2,6 +2,8 @@
 title: Eclipse and Bndtools
 layout: nested
 description: In this section we will go through the support Eclipse provides to help you develop bundles with maven
+lprev: ci
+lnext: start
 ---
 # Eclipse and Bndtools
 

@@ -2,6 +2,8 @@
 title: Continuous Integration
 layout: nested
 description: In this section we will see how to setup a Git project and run a Continuous Integration server
+lprev: deploy
+lnext: start
 ---
 # Continuous Integration
 

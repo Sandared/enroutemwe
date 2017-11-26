@@ -2,6 +2,8 @@
 title: A Web Application
 layout: nested
 description: In this section we create a small web application that calls the evaluator from the web
+lprev: dependencies
+lnext: testing
 ---
 # A Web Application
 

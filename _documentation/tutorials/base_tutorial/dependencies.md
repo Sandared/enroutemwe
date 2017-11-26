@@ -2,6 +2,8 @@
 title: Dependencies
 layout: nested
 description: In this section we look into how we can depend on other projects inside and outside our workspace
+lprev: debug
+lnext: testing
 ---
 # Dependencies
 
