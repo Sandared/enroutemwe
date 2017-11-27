@@ -53,3 +53,5 @@ collections:
     output: true
   services:
     output: true
+  misc:
+    output: true
