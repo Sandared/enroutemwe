@@ -16,8 +16,9 @@
 </div>
 <div class="col s12 m7 l8 light newsitem-content">
 	<h6 class="newsitem-header">{{page.title}}</h6>
-	<p class="newsitem-date hide-on-med-and-up">{{ page.published_at | date: "%B %d, %Y" }}<p>
-	{{content}}
+	<p class="newsitem-date hide-on-med-and-up">{{ page.published_at | date: "%B %d, %Y" }}</p>
+	{{content | truncatewords: 50}}
+	<p><a href="{{ page.link }}">Read on ...</a></p>
 </div>
 <div class="col s12">
 	<div class="row newsitem-divider-row">

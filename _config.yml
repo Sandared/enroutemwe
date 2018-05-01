@@ -39,7 +39,7 @@ logo: logo.png
 # Github data, if present there will be a GitHub button in the navbar
 github_button:
   user: osgi
-  project: osgi.enroute.site
+  project:
 
 # Twitter data, if present there will be a Twitter button in the navbar
 twitter_button:
@@ -50,8 +50,4 @@ collections:
   landingpage:
     output: true
   tutorials:
-    output: true
-  services:
-    output: true
-  misc:
     output: true

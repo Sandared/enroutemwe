@@ -22,11 +22,6 @@ a:hover#titlebutton{color:{{inverseTextColor}};}
 #trianglify-content{background:linear-gradient(135deg, {{primaryDarkColor}}, {{primaryLightColor}});}
 
 /* Peptalks */
-.peptalkitem-icon{color:{{dividerColor}};}
+.peptalkitem-icon{color:{{primaryLightColor}};}
 .peptalkitem-header{font-weight:350;}
 .peptalkitem-content{text-align:justify;}
-
-
-
-
-

@@ -1,8 +1,9 @@
 ---
 layout: news
-title: OSGi enRoute 2.0.0
-author: John Doe
-published_at: 2017-09-21
+title: OSGi R7 Highlights - The Converter
+author: David Bosschaert
+published_at: 2018-04-10
+link: https://blog.osgi.org/2018/04/osgi-r7-highlights-converter.html
 ---
 OSGi enRoute is an ongoing project that normally increments in minor version changes. However, OSGi enRoute is this time a major version because we made a lot of changes to the underlying machinery.
 For the use of OSGi enRoute there is not much difference. However, under the cover we’ve made it possible to share repositories between Maven and Bndtools and we phased out the use of JPM in favor of defining external dependencies in a Maven POM.

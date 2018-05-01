@@ -1,9 +1,10 @@
 ---
 layout: news
-title: DTOs, what the heck? 
+title: OSGi CORE RELEASE 7 AND COMPENDIUM RELEASE 7 NOW AVAILABLE
 author: Jane Doe
-published_at: 2017-09-19
+published_at: 2018-04-25
+link: https://www.osgi.org/osgi-core-release-7-and-compendium-release-7-now-available/
 ---
 
-n the last releases of OSGi specifications Data Transfer Objects (DTOs) have become quite important. This comes as a surprise to people because DTO’s are very non-object oriented and wasn’t object oriented a euphemism for good? DTOs give up some of the benefits of object-oriented programming to avoid the horrid problems associated object serialization in strongly typed languages.
-This Application note discusses the background of DTOs and attempts to explain why they are so important in modern systems.
+The OSGi Alliance announces that the OSGi Core Release 7 and Compendium Release 7 Specifications (R7) are available for download. Developers can now use these new specifications to more easily extend the functionality of their software.
+The OSGi Core Specification delivers an open, common modular architecture for enterprises, service providers, software developers and vendors, gateway operators and equipment manufacturers to develop, deploy and manage software services in a coordinated manner. It enables entirely new categories of networked devices and enterprise software services due to its flexible and managed deployment of services.
