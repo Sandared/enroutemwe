@@ -14,9 +14,10 @@
 .secondary-background{background: {{secondaryBackgroundColor}};}
 
 /* Heroheader */
-.heroheader-title{color:{{inverseTextColor}};padding-top:60px;margin:0px;font-size:50px;}
-.heroheader-subtitle{color:{{inverseTextColor}};font-size:30px;margin-top:0px;}
-.heroheader-version{color:{{inverseTextColor}};padding-bottom:60px;margin:0px;font-size:14px;}
+.heroheader-title{color:{{inverseTextColor}};padding-top:55px;margin:0px;font-size:50px;}
+.heroheader-subtitle{color:{{inverseTextColor}};font-size:30px;margin-top:0px;margin-bottom:35px;}
+.heroheader-quote{color:{{inverseTextColor}};margin:0px;font-size:20px;font-style:italic;font-weight:lighter;}
+.lead{padding-bottom:60px;margin-top:45px;}
 #titlebutton{background-color:{{accentColor}};}
 a:hover#titlebutton{color:{{inverseTextColor}};}
 #trianglify-content{background:linear-gradient(135deg, {{primaryDarkColor}}, {{primaryLightColor}});}
